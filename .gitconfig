@@ -1,7 +1,7 @@
 # vim: sw=4 ts=4
 [user]
-    name = arrack
-    email = arrack@pixnet.tw
+	name = sam
+	email = sam@pixnet.tw
 [color]
     ui = auto
     diff = auto

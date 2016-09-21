@@ -1,7 +1,7 @@
 set background=dark
 set ruler
 set secure
-set hls
+set hlsearch
 set ignorecase
 set number
 set showcmd
@@ -23,6 +23,12 @@ set nobomb
 set nobackup nowritebackup
 "關掉viminfo
 set viminfo="NONE"
+set cursorline
+set incsearch
+set laststatus=2
+set cmdheight=2
+set smartcase
+set showmode
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
 

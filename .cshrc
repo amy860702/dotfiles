@@ -10,3 +10,4 @@ if ( -d ~/.cshrc.d ) then
         source "$name"
     end
 endif
+
