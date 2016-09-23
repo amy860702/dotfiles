@@ -1,45 +1,83 @@
-set background=dark
-set ruler
-set secure
-set hlsearch
-set ignorecase
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'tmhedberg/matchit'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" general settings
 set number
-set showcmd
-set encoding=utf-8
-set fileencodings=utf-8,default,big5
+syntax on
+set background=dark
+set cursorline
+set lazyredraw
 set backspace=indent,eol,start
-set shiftwidth=4
-set softtabstop=4
-set tabstop=8
+set secure
 set matchpairs+=<:>
 set ambiwidth=double
-"set autoindent
-set nocopyindent
-set nocindent
 set list
 set listchars=tab:>-,trail:~
 set nobomb
-"不備份
 set nobackup nowritebackup
-"關掉viminfo
 set viminfo="NONE"
-set cursorline
-set incsearch
+
+" status bar settings
+set ruler
+set showcmd
+set showmode
 set laststatus=2
 set cmdheight=2
+
+" search settings
+set hlsearch
+set incsearch
+set ignorecase
 set smartcase
-set showmode
+
+" encoding settings
+set encoding=utf-8
+set fileencodings=utf-8,default,big5
+
+" indentation settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set smarttab
+set autoindent
+set copyindent
+set smartindent
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
-
-set expandtab
 
 augroup xmlfiletype
     autocmd!
     autocmd FileType xml set noexpandtab
 augroup END
-
-syntax on
 
 au BufNewFile,BufRead *.phtml set filetype=php
 au BufNewFile,BufRead *.htm set filetype=php
@@ -50,3 +88,7 @@ source ~/.vim/php-doc.vim
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 nnoremap q :quit<CR>
+
+" show hidden files when using plugins
+let g:ctrlp_show_hidden = 1
+let NERDTreeShowHidden=1
