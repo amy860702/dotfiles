@@ -7,3 +7,7 @@ if ($term == "xterm" || $term == "vt100" || $term == "vt102" || $term !~ "con*")
     bindkey "\e[4~" end-of-line # End
     bindkey "\e[8~" end-of-line # End rxvt
 endif
+
+bindkey "^R"      i-search-back
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
