@@ -108,7 +108,6 @@ augroup END
 au BufNewFile,BufRead *.phtml set filetype=php
 au BufNewFile,BufRead *.htm set filetype=php
 au BufNewFile,BufRead *.html set filetype=php
-au FileType php so ~/.vim/indent/php.vim
 
 source ~/.vim/php-doc.vim
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
