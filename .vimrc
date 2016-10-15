@@ -73,30 +73,12 @@ set copyindent
 set smartindent
 
 " parenthesis completion
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
-inoremap [      []<Left>
-inoremap [<CR>  [<CR>]<Esc>O
-inoremap [[     [
-inoremap []     []
-
-inoremap (      ()<Left>
-inoremap (<CR>  (<CR>)<Esc>O
-inoremap ((     (
-inoremap ()     ()
-
-inoremap '      ''<Left>
-inoremap '<CR>  '<CR>'<Esc>O
-inoremap ''     '
-inoremap ''     ''
-
-inoremap "      ""<Left>
-inoremap "<CR>  "<CR>"<Esc>O
-inoremap ""     "
-inoremap ""     ""
+inoremap {<Tab> {}<Left>
+inoremap [<Tab> []<Left>
+inoremap (<Tab> ()<Left>
+inoremap <<Tab> <><Left>
+inoremap '<Tab> ''<Left>
+inoremap "<Tab> ""<Left>
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
 
@@ -104,15 +86,6 @@ augroup xmlfiletype
     autocmd!
     autocmd FileType xml set noexpandtab
 augroup END
-
-au BufNewFile,BufRead *.phtml set filetype=php
-au BufNewFile,BufRead *.htm set filetype=php
-au BufNewFile,BufRead *.html set filetype=php
-
-source ~/.vim/php-doc.vim
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-nnoremap q :quit<CR>
 
 " show hidden files when using plugins
 let g:ctrlp_show_hidden = 1
