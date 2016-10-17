@@ -31,6 +31,7 @@ filetype plugin indent on    " required
 
 " general settings
 set number
+set relativenumber
 syntax on
 set background=dark
 set cursorline
@@ -73,14 +74,32 @@ set copyindent
 set smartindent
 
 " parenthesis completion
-inoremap {<Tab> {}<Left>
-inoremap [<Tab> []<Left>
-inoremap (<Tab> ()<Left>
-inoremap <<Tab> <><Left>
-inoremap '<Tab> ''<Left>
-inoremap "<Tab> ""<Left>
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {<Tab> {
+inoremap {}     {}
+
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [<Tab> [
+inoremap []     []
+
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap (<Tab> (
+inoremap ()     ()
+
+inoremap '      ''<Left>
+inoremap '<Tab> '
+inoremap ''     ''
+
+inoremap "      ""<Left>
+inoremap "<Tab> "
+inoremap ""     ""
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
+
+autocmd BufNewFile,BufRead *.phtml set filetype=php
 
 augroup xmlfiletype
     autocmd!
