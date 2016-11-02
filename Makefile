@@ -18,6 +18,7 @@ init:
 	ln -fs `pwd`/bin/deletebranch.sh ~/bin/deletebranch.sh
 	ln -fs `pwd`/bin/memcache-top ~/bin/memcache-top
 	ln -fs `pwd`/.bash_profile ~/.bash_profile
+	ln -fs `pwd`/.bashrc ~/.bashrc
 
 
 update:
