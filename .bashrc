@@ -21,3 +21,6 @@ alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias ga="git add"
+
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
