@@ -24,3 +24,18 @@ init:
 update:
 	git pull
 	git push
+
+cleanup:
+	rm ~/.cshrc
+	rm -rf ~/.cshrc.d
+	rm ~/.gitconfig
+	rm ~/.screenrc
+	rm ~/.tmux.conf
+	rm ~/.vimrc
+	rm -rf ~/.vim
+	rm ~/.my.cnf
+	rm ~/.grcat
+	rm -rf ~/bin
+	rm ~/.bash_profile
+	rm ~/.bashrc
+
