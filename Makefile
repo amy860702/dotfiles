@@ -8,6 +8,7 @@ init:
 	ln -fs `pwd`/.screenrc ~/.screenrc
 	ln -fs `pwd`/.tmux.conf ~/.tmux.conf
 	ln -fs `pwd`/.vimrc ~/.vimrc
+	rm -rf ~/.vim
 	ln -fs `pwd`/.vim ~/.vim
 	ln -fs `pwd`/.my.cnf ~/.my.cnf
 	ln -fs `pwd`/.grcat ~/.grcat
