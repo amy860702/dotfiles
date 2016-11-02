@@ -2,7 +2,6 @@
 
 init:
 	ln -fs `pwd`/.cshrc ~/.cshrc
-	rm -rf ~/.cshrc.d
 	ln -fs `pwd`/.cshrc.d ~/.cshrc.d
 	ln -fs `pwd`/.gitconfig ~/.gitconfig
 	ln -fs `pwd`/.screenrc ~/.screenrc
