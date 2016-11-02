@@ -1,7 +1,6 @@
 #
 
 init:
-	rm -f ~/.cshrc
 	ln -fs `pwd`/.cshrc ~/.cshrc
 	rm -rf ~/.cshrc.d
 	ln -fs `pwd`/.cshrc.d ~/.cshrc.d
