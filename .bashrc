@@ -24,3 +24,5 @@ alias ga="git add"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+export PATH=~/bin:$PATH
