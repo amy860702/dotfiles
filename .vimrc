@@ -71,7 +71,6 @@ set expandtab
 set smarttab
 set autoindent
 set copyindent
-set smartindent
 
 " parenthesis completion
 inoremap {      {}<Left>
