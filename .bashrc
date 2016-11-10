@@ -16,7 +16,7 @@ bind '"\e[1;5D": backward-word'
 bind '"\e[1;5C": forward-word'
 
 alias grep="grep --color=auto"
-alias ls="ls -Gal"
+alias ls="ls -Gal --color=always"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
