@@ -22,7 +22,7 @@ alias gc="git commit"
 alias ga="git add"
 alias python="python3"
 if [[ $(uname) == 'Linux' ]]; then
-    alias ls="ls --color=always"
+    alias ls="ls -al --color=always"
 else
     alias ls="ls -Gal"
 fi
