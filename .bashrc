@@ -16,12 +16,16 @@ bind '"\e[1;5D": backward-word'
 bind '"\e[1;5C": forward-word'
 
 alias grep="grep --color=auto"
-alias ls="ls -Gal --color=always"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias ga="git add"
 alias python="python3"
+if [[ $(uname) == 'Linux' ]]; then
+    alias ls="ls --color=always"
+else
+    alias ls="ls -Gal"
+fi
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
