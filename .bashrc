@@ -22,6 +22,7 @@ alias gd="git diff"
 alias gc="git commit"
 alias ga="git add"
 alias python="python3"
+alias composer="php -d allow_url_fopen=On -d apc.enable_cli=off /usr/local/bin/composer"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
