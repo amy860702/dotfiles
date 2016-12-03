@@ -16,13 +16,17 @@ bind '"\e[1;5D": backward-word'
 bind '"\e[1;5C": forward-word'
 
 alias grep="grep --color=auto"
-alias ls="ls -Gal"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias ga="git add"
 alias python="python3"
 alias composer="php -d allow_url_fopen=On -d apc.enable_cli=off /usr/local/bin/composer"
+if [[ $(uname) == 'Linux' ]]; then
+    alias ls="ls -al --color=always"
+else
+    alias ls="ls -Gal"
+fi
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
