@@ -17,7 +17,7 @@ init:
 	ln -fs `pwd`/bin/memcache-top ~/bin/memcache-top
 	ln -fs `pwd`/.bash_profile ~/.bash_profile
 	ln -fs `pwd`/.bashrc ~/.bashrc
-
+	ln -fs `pwd`/.zshrc ~/.zshrc
 
 update:
 	git pull
@@ -36,4 +36,5 @@ cleanup:
 	rm -rf ~/bin
 	rm ~/.bash_profile
 	rm ~/.bashrc
+	rm ~/.zshrc
 
