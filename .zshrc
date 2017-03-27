@@ -86,7 +86,7 @@ export EDITOR='/usr/bin/vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
-alias composer="php -d allow_url_fopen=On -d apc.enable_cli=off /usr/bin/composer"
+alias composer="php -d allow_url_fopen=On -d apc.enable_cli=off /usr/local/bin/composer"
 if [[ $(uname) == 'Linux' ]]; then
     alias ls="ls -al --color=always"
 else
