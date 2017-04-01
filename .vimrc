@@ -37,7 +37,6 @@ set background=dark
 set cursorline
 set lazyredraw
 set backspace=2
-set secure
 set matchpairs+=<:>
 set ambiwidth=double
 set list
