@@ -44,6 +44,7 @@ set listchars=tab:>-,trail:~
 set nobomb
 set nobackup nowritebackup
 set viminfo="NONE"
+set visualbell
 
 " status bar settings
 set ruler
