@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
+Plugin 'bling/vim-airline'
 Plugin 'tmhedberg/matchit'
 
 " All of your Plugins must be added before the following line
