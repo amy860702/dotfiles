@@ -45,6 +45,7 @@ set nobomb
 set nobackup nowritebackup
 set viminfo="NONE"
 set visualbell
+set wildmenu
 
 " status bar settings
 set ruler
