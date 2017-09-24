@@ -76,30 +76,6 @@ set smarttab
 set autoindent
 set copyindent
 
-" parenthesis completion
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {<Tab> {
-inoremap {}     {}
-
-inoremap [      []<Left>
-inoremap [<CR>  [<CR>]<Esc>O
-inoremap [<Tab> [
-inoremap []     []
-
-inoremap (      ()<Left>
-inoremap (<CR>  (<CR>)<Esc>O
-inoremap (<Tab> (
-inoremap ()     ()
-
-inoremap '      ''<Left>
-inoremap '<Tab> '
-inoremap ''     ''
-
-inoremap "      ""<Left>
-inoremap "<Tab> "
-inoremap ""     ""
-
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
 
 autocmd BufNewFile,BufRead *.phtml set filetype=php
