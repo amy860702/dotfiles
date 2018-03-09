@@ -75,8 +75,6 @@ set smarttab
 set autoindent
 set copyindent
 
-highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
-
 autocmd BufNewFile,BufRead *.phtml set filetype=php
 
 augroup xmlfiletype
