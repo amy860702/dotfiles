@@ -3,7 +3,7 @@
 export PATH=/usr/local/mysql/bin:$HOME/.composer/vendor/bin:~/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -92,3 +92,6 @@ if [[ $(uname) == 'Linux' ]]; then
 else
     alias ls="ls -Gal"
 fi
+
+source ~/google-cloud-sdk/path.zsh.inc
+source ~/google-cloud-sdk/completion.zsh.inc
