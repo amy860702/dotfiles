@@ -84,3 +84,6 @@ augroup END
 
 " show hidden files when using plugins
 let NERDTreeShowHidden=1
+
+" let the emmet trigger key to be ctrl + z
+let g:user_emmet_leader_key='<C-Z>'
