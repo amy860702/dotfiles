@@ -83,5 +83,4 @@ augroup xmlfiletype
 augroup END
 
 " show hidden files when using plugins
-let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden=1
