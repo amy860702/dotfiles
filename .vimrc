@@ -86,4 +86,7 @@ augroup END
 let NERDTreeShowHidden=1
 
 " let the emmet trigger key to be ctrl + z
+nnoremap <c-z> <nop>
+inoremap <c-z> <nop>
+vnoremap <c-z> <nop>
 let g:user_emmet_leader_key='<C-Z>'
